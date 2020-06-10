@@ -65,66 +65,78 @@ nav {
 }*/
 
 body{
-    background-color: whitesmoke;
+    background-color: rgb(174, 170, 196);
     border: solid olive 3px;
+}
+h1, h2{
+    text-align: center;
+
 }
 .container {
     width: 80%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     justify-content: center;
 }
-.mainImg{
-    width: 100;
-}
+
 nav{
     display:flex;
     justify-content: center;
     justify-content: space-evenly;
     margin-top: 2%;
     padding: 3%;
-
 }
+a{
+    text-decoration:none;
+    color:black;
+    text-align:center;
+    width:25%;
+}
+a:hover{
+    background:black;
+    color:white;
+}
+.mainimg{
+    
+        background-image:url("https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3586966%2Fpexels-photo-3586966.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26fit%3Dcrop%26h%3D627%26w%3D1200");
+        width:100%;
+         height:300px; 
+        background-repeat:no-repeat;
+        background-size:cover;
+}
+
 .top{
     display: flex;
     justify-content: center;
      width: 80%;
 
 }
-.bottom .bottom-img{
-    
-    justify-content: space-evenly;
-    
+.bottom-img{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+
+}
+.bottomP{
+    width: 19%;
 }
 h3{
     text-align: center;
 }
 
-@media(max-width: 800px){
-    header nav{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-      }
-
-      #about .text{
-        width:90%;
-      }
-     
-      .container{
-        display:flex;
+ @media(max-width: 800px){ 
+     nav{
         flex-direction:column;
         align-items:center;
-        width:90%;
       }
-      
+      .bottom-img{
+          justify-content: space-evenly;
+          flex-wrap: wrap;
+          margin: 5%;
       }
-      .top{
-        width:90%;
+      .bottomP{
+        width: 100%;
+        text-align: center;
       }
-      
-      footer nav{
-        width:90%;
-      }
+     }
 
-
-}
+   
